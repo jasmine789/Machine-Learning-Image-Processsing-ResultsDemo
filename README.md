@@ -1,9 +1,13 @@
 # Machine Learning in Image Processing
 
 · PR1: Implement a Back-propagation algorithm to recognize hand-written digits from 0-9.
+
 · PR2: Recognizing hand-written digits from 0-9 using Convolutional Neural Network (CNN) and PyTorch.
+
 · PR3: Bird species Classification using VGG-16 and ResNet18.
+
 · PR4: Image denoising with DnCNN, U-net like CNNs and U-net like CNNs with dilated convolutions.
+
 · Group Project: Image Captioning with CNN as encoder and RNN as a decoder
 
 ## PR1: Back-propagation using MNIST dataset
