@@ -1,20 +1,16 @@
 # Machine Learning in Image Processing
 
-·    PR1: Implement Back-propagation algorithm to recognize hard-written digits from 0-9.
-
-·    PR2: Recognizing hard-written digits from 0-9 using Convolutional Neural Network (CNN) and PyTorch.
-
-·    PR3: Bird species Classification using VGG-16 and ResNet18.
-
-·    PR4: Image denoising with DnCNN, U-net like CNNs and U-net like CNNs with dilated convolutions.
-
-·    Group Project: Image Captioning with CNN as encoder and RNN as decoder
+· PR1: Implement a Back-propagation algorithm to recognize hand-written digits from 0-9.
+· PR2: Recognizing hand-written digits from 0-9 using Convolutional Neural Network (CNN) and PyTorch.
+· PR3: Bird species Classification using VGG-16 and ResNet18.
+· PR4: Image denoising with DnCNN, U-net like CNNs and U-net like CNNs with dilated convolutions.
+· Group Project: Image Captioning with CNN as encoder and RNN as a decoder
 
 ## PR1: Back-propagation using MNIST dataset
 
-This assignment focuses on multiclass classification on the MNIST Dataset. I implement a simple neural Network and backpropagation algorithm.  The MNIST Dataset consists of labeled images of handwritten digits from 0 to 9. Each image is 28 by 28 pixels (784 pixels). In this project, I implement a shallow neural network with a single hidden layer and ReLU as activation function. The output layer uses Softmax as activation function. There are 64 neurons in hidden layer and 10 neurons in output layer.
+This assignment focuses on multiclass classification on the MNIST Dataset. I implement a simple Neural Network and backpropagation algorithm.  The MNIST Dataset consists of labeled images of handwritten digits from 0 to 9. Each image is 28 by 28 pixels (784 pixels). In this project, I implement a shallow neural network with a single hidden layer and ReLU as an activation function. The output layer uses Softmax as an activation function. There are 64 neurons in the hidden layer and 10 neurons in the output layer.
 
-The classification accuray is around 95.52%.
+The classification accuracy is around 95.52%.
 
 
 
@@ -28,7 +24,7 @@ The classification accuracy is around 98.07%.
 
 ## PR3: Bird species classification using VGG-16 and ResNet-18
 
-In this project, I use transfer learning to solve a classification problem. In this project, I get familar with using PyTorch’s DataLoader, and creating checkpoints to stop and restart model training. We want to learn how to predict the species of a bird given its picture. We use Caltech-UCSD Birds-200-2011 (CUB-200-2011) dataset. 
+In this project, I use transfer learning to solve a classification problem. In this project, I get familiar with using PyTorch’s DataLoader and creating checkpoints to stop and restart model training. We want to learn how to predict the species of a bird given its picture. We use Caltech-UCSD Birds-200-2011 (CUB-200-2011) dataset. 
 
 The results are demonstrated below:
 
@@ -41,13 +37,13 @@ The results are demonstrated below:
 
 ## PR4: Image denoising with DnCNN, U-net like CNNs and U-net like CNNs with dilated convolutions.
 
-In this assignment, we implement a specific regression problem: image denoising. We will be using deep Convolutional Neural Networks (CNNs) with PyTorch, investigate DnCNN and U-net architectures. We use images from the “Berkeley Segmentation Dataset and Benchmark” (https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/bsds/). This directory contains two sub-directories: train and test, which consist of 200 and 100 images, respectively, of either size 321 × 481 or 481 × 321. We can use a small training set for image denoising because denoising each pixel of an image can be seen as one regression problem. Hence, our training is in fact composed of 200×321×481 ≈ 31 million samples.
+In this assignment, I implement a specific regression problem: image denoising. We will be using deep Convolutional Neural Networks (CNNs) with PyTorch, investigate DnCNN and U-net architectures. We use images from the “Berkeley Segmentation Dataset and Benchmark” (https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/bsds/). This directory contains two sub-directories: train and test, which consist of 200 and 100 images, respectively, of either size 321 × 481 or 481 × 321. We can use a small training set for image denoising because denoising each pixel of an image can be seen as one regression problem. Hence, our training is composed of 200×321×481 ≈ 31 million samples.
 
 The DnCNN structure is demonstrated as the following figure:
 
 ![DnCNN](./results_demo/DnCNN.png)
 
-The performance is evaluated using Peak Signal-to-Noise-Ratio (PSNR). In this project, we set D = 6. In this project, we implment 3 architectures - DnCNN, U-net like CNNS and U-net like CNNs with dilated convolutions. The results are demonstrated below:
+The performance is evaluated using Peak Signal-to-Noise-Ratio (PSNR). In this project, we set D = 6. In this project, I implement 3 architectures - DnCNN, U-net like CNNS and U-net like CNNs with dilated convolutions. The results are demonstrated below:
 
 | Structure                                 | PSNR      | Training Curves                                          |
 | ----------------------------------------- | --------- | -------------------------------------------------------- |
